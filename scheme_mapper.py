@@ -14,7 +14,8 @@ def repl_maker(mapping: dict):
 
     def repl(m):
         color = next(counter)
-        mapping[m.group(2)] = color
+        # mapping[m.group(2)] = color
+        mapping[f'cls_{color:06x}'] = color
         print(f'{color:06x}')
         return f'{color :06x}\t'
 
@@ -36,8 +37,8 @@ def create_mapped_clr(in_, out):
 
 
 def make_class_name(name: str) -> str:
-    return name.replace(' ', '_')
-
+    # return name.replace(' ', '_')
+    return name
 
 def generate_style(mapping: dict):
     def gen_class_styles():
