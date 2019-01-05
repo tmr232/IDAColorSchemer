@@ -23,6 +23,8 @@ Generating an IDA `.clr` file should be an easy step of mapping the stylesheet b
 
 ## Current status
 
+UBER HACK
+
 The initial view generation kinda works.
 Next step is the UI.
 
